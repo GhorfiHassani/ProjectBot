@@ -6,14 +6,14 @@ var builder = require('botbuilder');
 // Partie Setup Creation d'une API 
 
 var server=restify.createServer();
-server.listen(process.env.port || process.env.PORT || 3978, function () {
+server.listen(process.env.port || process.env.PORT || 8080, function () {
    console.log('%s listening to %s', server.name, server.url); 
 });
 
 // Create connector and bot
 var connector = new builder.ChatConnector({
-    appId: null,
-    appPassword: null
+    appId: "219a1c49-d3bd-4888-8d83-add042687bb8",
+    appPassword: "ctmmSKNVC172?])#oyeSE65"
 });
 
 var bot = new builder.UniversalBot(connector);
